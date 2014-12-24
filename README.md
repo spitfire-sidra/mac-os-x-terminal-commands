@@ -1,6 +1,39 @@
 mac-os-x-terminal-commands
 ==========================
 
+看檔案的擴充屬性(extended attributes)
+
+等同於 [lsattr](http://linux.vbird.org/linux_basic/0220filemanager.php#lsattr)
+
+```
+$ ls -leO@ file
+-rw-r--r--  1 user  staff  uchg 675 12 23 11:33 /Users/user/file
+```
+
+`uchg` 就是擴充屬性 `unchangeable`
+
+```
+e -> Print the Access Control List (ACL) associated with the file, if present, in long (-l) output.
+
+@ -> Display extended attribute keys and sizes in long (-l) output.
+
+O -> Include the file flags in a long (-l) output.
+```
+
+改變檔案的擴充屬性(extended attributes)
+
+等同於 [chattr](http://linux.vbird.org/linux_basic/0220filemanager.php#chattr)
+
+```
+$ chflags <flags> <file>
+```
+
+例如:
+
+```
+$ chflags uchg file
+```
+
 
 複製資料夾
 
