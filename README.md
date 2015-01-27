@@ -126,3 +126,9 @@ caffeinate -u -t 20
 ```
 say "We love Mac OS X"
 ```
+
+同意 MAC OS X Xcode/iOS 使用條款
+
+```
+sudo xcodebuild -license
+```
