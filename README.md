@@ -1,6 +1,12 @@
 mac-os-x-terminal-commands
 ==========================
 
+搜尋 Whatis 資料庫中的字串
+
+```
+apropos <keywords>
+```
+
 看檔案的擴充屬性(extended attributes)
 
 等同於 [lsattr](http://linux.vbird.org/linux_basic/0220filemanager.php#lsattr)
