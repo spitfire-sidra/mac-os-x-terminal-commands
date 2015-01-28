@@ -132,3 +132,24 @@ say "We love Mac OS X"
 ```
 sudo xcodebuild -license
 ```
+
+防火牆指令(packet filter, PF)
+
+pfctl
+
+The pfctl utility communicates with the packet filter device.  It allows
+ruleset and parameter configu-ration configuration ration and retrieval of status information from the packet filter.
+
+啟動 PF (預設已經開啟)
+
+```
+pfctl -e
+```
+
+關閉 PF
+
+```
+pfctl -d
+```
+
+
