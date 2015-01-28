@@ -133,7 +133,7 @@ say "We love Mac OS X"
 sudo xcodebuild -license
 ```
 
-防火牆指令(packet filter, PF)
+## 防火牆指令(packet filter, PF)
 
 pfctl
 
@@ -143,13 +143,43 @@ ruleset and parameter configu-ration configuration ration and retrieval of statu
 啟動 PF (預設已經開啟)
 
 ```
-pfctl -e
+sudo pfctl -e
 ```
 
 關閉 PF
 
 ```
-pfctl -d
+sudo pfctl -d
 ```
 
+重新載入 PF 設定
+
+```
+sudo pfctl -f /etc/pf.conf
+```
+
+列出 PF 詳細資訊
+
+```
+sudo pfctl -s all
+```
+
+新增一個 Table 存放 IP
+
+```
+sudo pfctl -t <table_name> -T add <ip_address>
+```
+
+監聽 PF log
+
+```
+sudo ifconfig pflog0 create
+sudo tcpdump -v -n -e -ttt -i pflog0
+```
+
+關閉 PF log
+
+```
+sudo ifconfig pflog0 destroy
+```
 
