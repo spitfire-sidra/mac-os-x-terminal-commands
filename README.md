@@ -138,3 +138,49 @@ say "We love Mac OS X"
 ```
 sudo xcodebuild -license
 ```
+
+## 剪貼簿操作
+
+複製檔案內容到剪貼簿
+
+```
+$ pbcopy < my-test-file.txt
+```
+
+or
+
+```
+$ ls ~ | pbcopy
+```
+
+從剪貼簿貼上內容
+
+```
+pbpaste
+```
+
+## 雜湊值計算
+
+從 CONSOLE 輸入算 SHA1
+
+```
+$ shasum -a 1 -
+<隨便輸入，按 CTRL+D 結束輸入>
+```
+
+note: -a {1, 244, 256, 384, 512, 512224, 512256}
+
+
+從二進制檔案算 SHA1
+
+```
+$ shasum -a 1 -b file.bin
+```
+
+從文字檔算 SHA1
+
+```
+$ shasum -a 1 -t file.txt
+```
+
+
