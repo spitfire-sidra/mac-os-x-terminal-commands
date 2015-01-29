@@ -1,6 +1,12 @@
 mac-os-x-terminal-commands
 ==========================
 
+用行寬 72 印出檔案內容
+
+```
+fold -w 72 file.txt
+```
+
 搜尋 Whatis 資料庫中的字串
 
 ```
