@@ -183,4 +183,10 @@ $ shasum -a 1 -b file.bin
 $ shasum -a 1 -t file.txt
 ```
 
+## 網路指令
 
+觀察 TCP 連線情況
+
+```
+$ nettop -m tcp
+```
