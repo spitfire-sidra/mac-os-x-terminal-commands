@@ -197,7 +197,18 @@ $ shasum -a 1 -t file.txt
 $ nettop -m tcp
 ```
 
+清除 DNS 快取
+
+```
+# Yosemite
+$ sudo discoveryutil mdnsflushcache
+
+# Mavericks, Mountain Lion and Lion
+$ sudo killall -HUP mDNSResponder
+```
 
 ## Reference
 
 https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/index.html
+
+https://support.apple.com/en-us/HT202516
